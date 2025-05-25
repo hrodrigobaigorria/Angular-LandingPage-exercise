@@ -13,7 +13,6 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  
   loading: boolean = true;
   public product?: IProduct;
   public safeImageUrl?: SafeUrl;
