@@ -1,0 +1,19 @@
+<form [formGroup]="personalDataForm" (ngSubmit)="submit($event)">
+  <div>
+    <label>Nombre:</label>
+    <input formControlName="firstName" required>
+  </div>
+  <div>
+    <label>Apellido:</label>
+    <input formControlName="lastName" required>
+  </div>
+  <div>
+    <label>Teléfono:</label>
+    <input formControlName="phone" required pattern="^[0-9]{10}$">
+  </div>
+  <div>
+    <label>Dirección:</label>
+    <input formControlName="address" required>
+  </div>
+  <button type="submit">Enviar</button>
+</form>
