@@ -4,12 +4,11 @@ import { Observable } from 'rxjs';
 import { IProduct } from '../models/product.model';
 
 @Injectable({
-  providedIn: 'root'
+ providedIn: 'root'
 })
 export class ApiService {
-
  private _http = inject(HttpClient);
- private urlBase: string ='https://fakestoreapi.com/products'
+ private urlBase: string ='https://fakestoreapi.com/products';
 
  getProducts():Observable<IProduct[]>{
   return this._http.get<IProduct[]>(this.urlBase);

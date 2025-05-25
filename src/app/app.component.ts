@@ -7,14 +7,17 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, CommonModule, RouterLink],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   menuOption: string = '';
+  darkMode: boolean = false;
 
   onOption(menuOption:string){
     this.menuOption = menuOption;
   }
 
- 
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode;
+  }
 }

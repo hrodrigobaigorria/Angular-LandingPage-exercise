@@ -11,9 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  
   contactForm!: FormGroup;
-  
   constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
